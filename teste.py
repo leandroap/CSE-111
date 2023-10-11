@@ -9,20 +9,22 @@ with open('seuarquivo.json', 'r') as arquivo:
 atributo_alvo = 'nome'
 valor_alvo = 'Alice'
 
-# Função para buscar o atributo em estruturas aninhadas
-def buscar_em_json(obj, target):
+# Função para buscar o valor do atributo em estruturas aninhadas
+def buscar_em_json(obj, target_attribute, target_value):
+    resultados = []
     if isinstance(obj, dict):
         for key, value in obj.items():
-            if key == target:
-                yield value
+            if key == target_attribute and value == target_value:
+                resultados.append(obj)
             if isinstance(value, (dict, list)):
-                yield from buscar_em_json(value, target)
+                resultados.extend(buscar_em_json(value, target_attribute, target_value))
     elif isinstance(obj, list):
         for item in obj:
-            yield from buscar_em_json(item, target)
+            resultados.extend(buscar_em_json(item, target_attribute, target_value))
+    return resultados
 
-# Realize a busca pelo atributo
-resultados_filtrados = list(buscar_em_json(dados, atributo_alvo))
+# Realize a busca pelo atributo com valor específico
+resultados_filtrados = buscar_em_json(dados, atributo_alvo, valor_alvo)
 
-# Agora, resultados_filtrados contém os valores do atributo 'nome' em todas as estruturas aninhadas
+# Agora, resultados_filtrados contém os objetos que atendem ao critério especificado
 print(resultados_filtrados)
