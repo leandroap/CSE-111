@@ -216,6 +216,7 @@ def make_periodic_table_with_protons():
     }
 
     return periodic_table_dict
+
 # Indexes for inner lists in the periodic table
 NAME_INDEX = 0
 ATOMIC_MASS_INDEX = 1
@@ -224,7 +225,6 @@ ATOMIC_NUMBER_INDEX = 2
 # Indexes for inner lists in a symbol_quantity_list
 SYMBOL_INDEX = 0
 QUANTITY_INDEX = 1
-
 
 def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
     """Compute and return the total molar mass of all the
