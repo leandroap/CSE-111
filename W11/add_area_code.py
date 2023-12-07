@@ -18,7 +18,7 @@ def main():
         # Print the list with the corrected phone numbers.
         print(new_numbers)
 
-        print("\Using lambda:")
+        print("Using lambda:")
         add_area_code_lambda = lambda phone_number: f"208-{phone_number}" \
             if (len(phone_number) < 12) else phone_number
         
