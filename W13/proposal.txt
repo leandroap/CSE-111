@@ -1,0 +1,92 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+
+The name will be "URL and Services Tester" 
+
+2. What real-world problem will your program address or help to solve?
+
+In the real-world a system uses to consume statics contents from an URL or data from and API, and an important principle is that "Everything fails, all the time" (Werner Vogels).
+With this in mind, I will write a program to validate if an URL or service is running, and responding with the expected HTTP status or content.
+
+3. What will you learn from developing this program?
+
+In fact, I don't know how to do HTTP requests in Python, I intend to learn how to do this using the module requests (or other if necessary).
+
+4. What Python modules will your program use?
+
+At this moment I plan to use the following modules:
+- pytest
+- requests
+- csv
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+
+Yes, I will. I don't know for sure how many functions I will do, but I want to separate like that.
+
+6. Will you write test functions to test at least two of your program
+functions?
+
+Yes, I will do.
+
+During this week I spent my time exploring the list of possible projects listed in the milestone, including the list of websites.
+After some research I narrowed it down to the two following options: "A program that retrieves data from a server", and "A program that retrieves data from a Firebase database".
+
+Then, I spent some time reading the documentation on those websites:
+
+https://requests.readthedocs.io/en/latest/
+https://swapi.dev/documentation
+https://github.com/Juriy/swapi
+https://github.com/phalt/swapi-python
+https://swapi-python.readthedocs.io/en/latest/
+https://pokeapi.co/
+https://www.freecodecamp.org/news/how-to-get-started-with-firebase-using-python/
+https://firebase.google.com/docs/reference/admin/python
+
+This week (W12) I spent some time reading the documentation or sample codes on those websites:
+
+https://requests.readthedocs.io/en/latest/
+https://requests-mock.readthedocs.io/en/latest/pytest.html
+https://stackoverflow.com/questions/57663308/how-to-mock-requests-using-pytest
+https://stackoverflow.com/questions/52060950/how-to-use-pytest-capsys-on-tests-that-have-mocking-decorators/52065289#52065289
+https://httpbin.org/
+https://github.com/postmanlabs/httpbin
+https://realpython.com/python-command-line-arguments/
+https://www.geeksforgeeks.org/command-line-arguments-in-python/
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+https://stackoverflow.com/questions/53204814/is-it-bad-practice-to-have-arguments-called-in-main-in-python
+https://cs.stanford.edu/people/nick/py/python-main.html
+
+
+This week (W13) I spent some time reading the documentation or sample codes on those websites:
+
+-> https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+-> https://requests.readthedocs.io/en/latest/
+-> https://httpbin.org/
+-> https://stackoverflow.com/questions/7160737/how-to-validate-a-url-in-python-malformed-or-not
+-> https://docs.python.org/3.0/library/urllib.parse.html
+-> https://www.slingacademy.com/article/python-ways-to-check-if-a-string-is-a-valid-url/
+-> https://validators.readthedocs.io/en/latest/
+-> https://www.codingdeeply.com/python-check-if-url-is-valid/
+-> https://www.geeksforgeeks.org/command-line-arguments-in-python/
+-> https://www.w3schools.com/python/python_for_loops.asp
+-> https://python-forum.io/thread-17519.html
+-> https://itecnote.com/tecnote/python-check-if-file-has-a-csv-format-with-python/
+-> https://stackoverflow.com/questions/6470428/how-to-catch-multiple-exceptions-in-one-line-in-the-except-block
+
+This week I had created or modified more than 15 different functions. I create two different ways to execute the program, using a menu system at the terminal (main function), where the user can choice wich options they want to use. And a command line mode, where is possible run the programs passing arguments, such --help (look at the command_line_runner function).
+
+
+I haven't encountered any new topics this week, and I'm comfortable with the material we've covered so far.
+
+Parameters make a function more reusable because you can call it in different places with different arguments.
